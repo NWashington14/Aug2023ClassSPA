@@ -63,7 +63,7 @@ router.hooks({
 
       case "Pizza":
         axios
-          .get(process.env.PIZZA_PLACE_API_URL)
+          .get(`${process.env.PIZZA_PLACE_API_URL}/pizza`)
           .then(response => {
             // Storing retrieved data in state
             console.log(response);
